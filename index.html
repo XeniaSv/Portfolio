@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="links" href="#about">About me</a>
+            <a class="links" href="#portfolio">Portfolio</a>
+            <a class="links" href="#contacts">Contacts</a>
+        </nav>
+
+        <ul class="menu">
+            <li class="hamburger">&#9776</li>
+            <li class="menu_bar"><a class="links" href="#about">About me</a></li>
+            <li class="menu_bar"><a class="links" href="#portfolio">Portfolio</a></li>
+            <li class="menu_bar"><a class="links" href="#contacts">Contacts</a></li>
+        </ul>
+    </header>
+
+    <main>
+    <section class="head">
+        <img class="icon" alt="Icon of me" src="resources/Icon.png">
+        <h1>Kseniia Savelicheva <br>Future Front-end developer</h1>
+    </section>
+    <section id="about">
+        <hr>
+        <h2>About me</h2>
+        <p>Hi, I'm Kseniia Savelicheva. I'm studying in ITMO university on a programmer, but I wanna to be a front-end developer.</p>
+    </section>
+    <section id="portfolio">
+        <hr>
+        <h2>Portfolio</h2>
+        <figure class="portfolio">
+            <img class="flashcards" src="resources/Flashcards.jpg" alt="My Flashcards web page">
+            <figcaption>Flashcards</figcaption>
+            <button class="open-window" onclick="flashOpen()">Flashcards</button>
+        </figure>
+
+    </section>
+        <hr>
+    </main>
+    <div class="window popup">
+        <div class="popup_body">
+            <div class="popup-content">
+                <div class="popup_title">Flashcards</div>
+                <div class="popup_text">
+                    I did this project when I was studying the frontend on HyperSkill.
+                    I created a web page with flip-down flash cards, learned some HTML basic and
+                    learned that CSS can easily make a beautiful design.
+                </div>
+                <button class="close-window" onclick="flashClose()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="src/popup.js"></script>
+    <script src="src/hamburger_menu.js"></script>
+</body>
+<footer>
+    <section id="contacts">
+        <a href="mailto:savelicheva123@gmail.com">Mail&nbsp</a> |
+        <a href="tel:+123456789">123456789&nbsp</a>
+    </section>
+</footer>
+</html>
